@@ -67,7 +67,6 @@
 .main {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
 }
 .main__content {
@@ -165,11 +164,13 @@
 .main__a:hover {
   color: #a050be;
 }
-.main__sidebar {
+.main .sidebar {
   width: 25%;
   padding: 40px 10px;
 }
 .main .sidebar__top {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #eaeaeb;
   padding: 15px 20px;
 }
@@ -186,10 +187,7 @@
   list-style: none;
 }
 .main .sidebar__list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
+  text-align: center;
   padding: 15px 0;
 }
 .main .sidebar__list:not(:last-child) {
